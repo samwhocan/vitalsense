@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    tools:context=".InputFragment" >
+    
+    <LinearLayout
+        android:id="@+id/instruction_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+			android:id="@+id/instruction_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/input_view_padding"
+			android:background="@drawable/black_panel"
+			android:text="@string/instruction"
+			android:textSize="@dimen/instruction_text"
+			android:textStyle="italic"
+			android:textColor="@color/green" />
+        
+    </LinearLayout>    
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/instruction_text_layout"
+        android:padding="@dimen/input_view_margin"
+        android:background="@drawable/white_panel" >        
+        
+    	<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/input_view_padding"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/manualInputText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_view_margin"
+                android:layout_marginRight="@dimen/input_view_margin"
+                android:text="@string/manual_input"
+                android:textSize="@dimen/table_header_text"
+                android:textColor="@android:color/black" >
+
+                <requestFocus />
+                
+            </TextView>
+
+        </LinearLayout>
+		
+        <LinearLayout
+            android:layout_margin="@dimen/input_view_padding" >
+			
+            <TextView
+                android:id="@+id/systolic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/systolic_title"
+                android:textSize="@dimen/table_header_text"
+                android:textColor="@color/grey" />
+				
+            <EditText
+                android:id="@+id/systolic_input_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:enabled="false" />
+            
+        </LinearLayout>
+		
+        <LinearLayout
+            android:layout_margin="@dimen/input_view_padding" >
+			
+            <TextView
+                android:id="@+id/diastolic_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/diastolic_title"
+                android:textSize="@dimen/table_header_text"
+                android:textColor="@color/grey" />
+
+            <EditText
+                android:id="@+id/diastolic_input_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:enabled="false" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/input_view_padding" >
+
+            <TextView
+                android:id="@+id/pulse_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="@string/pulse_title"
+                android:textSize="@dimen/table_header_text"
+                android:textColor="@color/grey" />
+
+            <EditText
+                android:id="@+id/pulse_input_box"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="3"
+                android:enabled="false" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_margin="@dimen/input_view_padding" >
+        
+	        <Button
+	            android:id="@+id/input_reading_button"
+	            android:layout_width="@dimen/button_width"
+	            android:layout_height="@dimen/button_height"
+	            android:layout_gravity="bottom"
+	            android:layout_margin="@dimen/button_margin"
+	            android:layout_weight="1"
+	            android:background="@color/grey"
+	            android:padding="@dimen/button_padding"
+	            android:text="@string/input_reading_button_title"
+	            android:textColor="@android:color/darker_gray"
+	            android:textStyle="bold"
+	            android:typeface="serif"
+	            android:textSize="@dimen/button_text"
+	            android:enabled="false" />
+	        
+        </LinearLayout>
+        
+    </TableLayout>
+    
+</RelativeLayout>
