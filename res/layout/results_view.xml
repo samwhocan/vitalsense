@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@android:color/white"
+    android:background="@color/main_background"
     tools:context=".ResultsFragment" >
 
     <TableLayout
@@ -27,9 +27,9 @@
                 android:paddingBottom="@dimen/table_padding"
                 android:layout_weight=".35"
                 android:gravity="center_horizontal"
-                android:background="@drawable/black_table_cell"
+                android:background="@drawable/white_table_cell"
                 android:text="@string/date_time_title"
-                android:textColor="@color/green"
+                android:textColor="@color/secondary_text_color"
                 android:textSize="@dimen/table_header_text"
                 android:textStyle="italic" />
 
@@ -41,9 +41,9 @@
                 android:paddingBottom="@dimen/table_padding"
                 android:layout_weight=".25"
                 android:gravity="center_horizontal"
-                android:background="@drawable/black_table_cell"
+                android:background="@drawable/white_table_cell"
                 android:text="@string/systolic_title"
-                android:textColor="@color/green"
+                android:textColor="@color/secondary_text_color"
                 android:textSize="@dimen/table_header_text"
                 android:textStyle="italic" />
 
@@ -55,9 +55,9 @@
                 android:paddingBottom="@dimen/table_padding"
                 android:layout_weight=".25"
                 android:gravity="center_horizontal"
-                android:background="@drawable/black_table_cell"
+                android:background="@drawable/white_table_cell"
                 android:text="@string/diastolic_title"
-                android:textColor="@color/green"
+                android:textColor="@color/secondary_text_color"
                 android:textSize="@dimen/table_header_text"
                 android:textStyle="italic" />
 
@@ -69,9 +69,9 @@
                 android:paddingBottom="@dimen/table_padding"
                 android:layout_weight=".15"
                 android:gravity="center_horizontal"
-                android:background="@drawable/black_table_cell"
+                android:background="@drawable/white_table_cell"
                 android:text="@string/pulse_title"
-                android:textColor="@color/green"
+                android:textColor="@color/secondary_text_color"
                 android:textSize="@dimen/table_header_text"
                 android:textStyle="italic" />
             
@@ -96,7 +96,7 @@
 	                android:background="@drawable/white_table_cell"
 	                android:text="@string/result_data"
 	                android:textSize="@dimen/table_body_text"
-	                android:textColor="@android:color/black" />
+	                android:textColor="@color/secondary_text_color" />
 	            
 	            <TextView
 	                android:id="@+id/systolic_results_data"
@@ -108,7 +108,7 @@
 	                android:background="@drawable/white_table_cell"
 	                android:text="@string/result_data"
 	                android:textSize="@dimen/table_body_text"
-	                android:textColor="@android:color/black" />
+	                android:textColor="@color/secondary_text_color" />
 	            
 	            <TextView
 	                android:id="@+id/diastolic_results_data"
@@ -120,7 +120,7 @@
 	                android:background="@drawable/white_table_cell"
 	                android:text="@string/result_data"
 	                android:textSize="@dimen/table_body_text"
-	                android:textColor="@android:color/black" />
+	                android:textColor="@color/secondary_text_color" />
 	            
 	            <TextView
 	                android:id="@+id/pulse_results_data"
@@ -132,7 +132,7 @@
 	                android:background="@drawable/white_table_cell"
 	                android:text="@string/result_data"
 	                android:textSize="@dimen/table_body_text"
-	                android:textColor="@android:color/black" />
+	                android:textColor="@color/secondary_text_color" />
 	            
 	        </TableRow>
 	        
